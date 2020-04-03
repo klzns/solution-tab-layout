@@ -1,12 +1,63 @@
 {
-  "store.tab-layout": {
+  "store.custom#tab-layout": {
     "children": [
-      "rich-text#foo"
+      "tab-layout#simple"
     ]
   },
-  "rich-text#foo": {
+  "tab-layout#simple": {
+    "children": [
+      "tab-list#simple",
+      "tab-content#simple"
+    ]
+  },
+  "tab-list#simple": {
+    "children": [
+      "tab-list.item#tab1",
+      "tab-list.item#tab2"
+    ]
+  },
+  "tab-list.item#tab1": {
     "props": {
-      "text": "iaew boy"
+      "tabId": "tab1",
+      "label": "First Tab"
+    }
+  },
+  "tab-list.item#tab2": {
+    "props": {
+      "tabId": "tab2",
+      "label": "Second Tab"
+    }
+  },
+  "tab-content#simple": {
+    "children": [
+      "tab-content.item#tab1",
+      "tab-content.item#tab2"
+    ]
+  },
+  "tab-content.item#tab1": {
+    "props": {
+      "tabId": "tab1"
+    },
+    "children": [
+      "rich-text#tab1"
+    ]
+  },
+  "tab-content.item#tab2": {
+    "props": {
+      "tabId": "tab2"
+    },
+    "children": [
+      "rich-text#tab2"
+    ]
+  },
+  "rich-text#tab1": {
+    "props": {
+      "text": "Content of tab 1"
+    }
+  },
+  "rich-text#tab2": {
+    "props": {
+      "text": "Content of tab 2"
     }
   }
 }
