@@ -1,0 +1,17 @@
+{
+  "vendor": "vtex",
+  "name": "tab-layout-course",
+  "version": "0.1.0",
+  "title": "Tab Layout Course",
+  "description": "",
+  "defaultLocale": "en-US",
+  "builders": {
+    "store": "0.x"
+  },
+  "dependencies": {
+    "vtex.store": "2.x",
+    "vtex.tab-layout": "0.x",
+    "vtex.rich-text": "0.x"
+  },
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}
